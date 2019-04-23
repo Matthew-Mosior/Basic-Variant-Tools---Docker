@@ -31,9 +31,9 @@ WORKDIR "/home/haskelluser"
 
 #Git clone the repositories to /home/haskelluser.
 RUN git clone https://github.com/Matthew-Mosior/Variant-to-bam-readcount.git 
-Run git clone https://github.com/Matthew-Mosior/Move-Annotate-Merge.git
+RUN git clone https://github.com/Matthew-Mosior/Move-Annotate-Merge.git
 RUN git clone https://github.com/Matthew-Mosior/Basic-Variant-Parser.git 
-Run git clone https://github.com/Matthew-Mosior/Basic-Variant-Filter.git
+RUN git clone https://github.com/Matthew-Mosior/Basic-Variant-Filter.git
 
 #Change permissions of bin directories.
 RUN find Variant-to-bam-readcount/bin/ -type f -exec chmod 777 {} +
